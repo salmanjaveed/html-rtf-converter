@@ -1,5 +1,5 @@
 {
-  "name": "vonboth/html-rft-converter",
+  "name": "vonboth/html-rtf-converter",
   "description": "A HTML to RTF converter",
   "type":"library",
   "license": "MIT",
