@@ -18,12 +18,4 @@ class TextNode extends Node
     {
         return $this->sanitizeString($this->getDomNode()->nodeValue);
     }
-
-    /**
-     * @return \DOMNode
-     */
-    protected function getDomNode()
-    {
-        return parent::getDomNode();
-    }
 }

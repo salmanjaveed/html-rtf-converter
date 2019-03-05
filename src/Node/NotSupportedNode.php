@@ -14,6 +14,7 @@ class NotSupportedNode extends Node
 {
     /**
      * do nothing but return an empty string
+     * Child nodes within this DOM-node will be ignored!
      * @return string
      */
     public function parse()

@@ -74,8 +74,7 @@ class Node
         }
         $instanceId = spl_object_hash($node);
         if (!isset(self::$_nodeStore[$instanceId])) {
-            $nodeSpecific = self::_createSpecificNode($node);
-            self::$_nodeStore[$instanceId] = $nodeSpecific;
+            self::$_nodeStore[$instanceId] = self::_createSpecificNode($node);
         }
         return self::$_nodeStore[$instanceId];
     }

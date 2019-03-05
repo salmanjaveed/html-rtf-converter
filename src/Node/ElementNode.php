@@ -39,6 +39,7 @@ class ElementNode extends Node
     }
 
     /**
+     * pre-/append the RTF strings and parse child nodes
      * @return string
      */
     public function parse()

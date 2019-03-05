@@ -95,8 +95,8 @@ class HtmlToRtf
     public function getRTFFile()
     {
         $rtf = $this->getRTF();
-        /*header("Content-type: application/rtf");
-        header("Content-Disposition: attachment; filename={$this->_filename}");*/
+        header("Content-type: application/rtf");
+        header("Content-Disposition: attachment; filename={$this->_filename}");
         echo $rtf;
         exit();
     }
@@ -131,20 +131,3 @@ class HtmlToRtf
         return $this->_filename;
     }
 }
-
-/**
- * register autloader to load classes
- */
-spl_autoload_register(function ($class) {
-    $parts = explode('\\', $class);
-    $found = ($parts[0] === 'HtmlToRtf');
-    if ($found) {
-        array_shift($parts);
-        $fileName = __DIR__ . '/' . implode('/', $parts) . '.php';
-        $found = file_exists($fileName);
-        if ($found) {
-            include $fileName;
-        }
-    }
-    return $found;
-});
