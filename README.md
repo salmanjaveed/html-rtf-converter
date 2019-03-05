@@ -5,7 +5,7 @@ Supported HTML:
 - Text styles
   - bold
   - italic
-  - undeline
+  - underline
   - strikethrough
 - Align
   - Left
@@ -15,6 +15,8 @@ Supported HTML:
 - Lists
   - Ordered
   - Unordered
+- Table
+  - tr, th, td
 - Unicode characters
 
 Example can be found in examples/index.php

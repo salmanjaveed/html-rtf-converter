@@ -1,20 +1,29 @@
 <?php
+
 namespace HtmlToRtf\Node;
 
 use HtmlToRtf\Node;
 
+/**
+ * Class TextNode
+ * @package HtmlToRtf\Node
+ */
 class TextNode extends Node
 {
     /**
-     * @return DOMText
-     */
-    protected function getDomNode(){ return parent::getDomNode(); }
-
-    /**
+     * parse the node and return RTF string
      * @return string
      */
     public function parse()
     {
         return $this->sanitizeString($this->getDomNode()->nodeValue);
+    }
+
+    /**
+     * @return \DOMNode
+     */
+    protected function getDomNode()
+    {
+        return parent::getDomNode();
     }
 }
