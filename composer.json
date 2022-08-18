@@ -1,5 +1,5 @@
 {
-  "name": "vonboth/html-rtf-converter",
+  "name": "salmanjaveed/html-rtf-converter",
   "description": "A HTML to RTF converter",
   "type":"library",
   "license": "MIT",
@@ -10,13 +10,13 @@
   ],
   "authors": [
     {
-      "name": "Christoph von Both",
-      "email": "info@creatingcode.de",
-      "homepage": "http://creatingcode.de/"
+      "name": "Salman Javeed",
+      "email": "salmanjaveed@gmailcom",
+      "homepage": "https://triolutions.com"
     }
   ],
   "require": {
-    "php": "^5.6 || ^7.0"
+    "php": "^8.1"
   },
   "autoload": {
     "psr-4": {
